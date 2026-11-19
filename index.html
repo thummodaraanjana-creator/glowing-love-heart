@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>A Heart Full of Love</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <div
+        class="heart"
+        id="heart"
+        role="img"
+        aria-label="A glowing heart formed from the words I Love You Ima.."
+      >
+        <svg class="heart__outline" aria-hidden="true" focusable="false">
+          <path id="heart-outline" class="heart__outline-path"></path>
+        </svg>
+      </div>
+    </main>
+
+    <details class="controls">
+      <summary>Make it yours <span aria-hidden="true">✦</span></summary>
+      <form class="controls__form" autocomplete="off">
+        <label class="control" for="phrase">
+          <span>Repeating phrase</span>
+          <input id="phrase" name="phrase" type="text" value="I Love You Ima.." maxlength="32">
+        </label>
+
+        <label class="control control--color" for="glow-color">
+          <span>Glow color</span>
+          <input id="glow-color" name="glow-color" type="color" value="#ff69b4">
+        </label>
+
+        <label class="control" for="speed">
+          <span>Animation speed <output id="speed-value" for="speed">10.0 s</output></span>
+          <input id="speed" name="speed" type="range" min="6" max="18" step="0.5" value="10">
+        </label>
+      </form>
+    </details>
+  </body>
+</html>
